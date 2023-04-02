@@ -261,6 +261,9 @@
     padding: 20px;
     box-shadow: 0 5px 15px 0 rgba(0,0,0, 0.2);
     border-radius: 12px;
+    
+}
+.selection ul{
     display: flex;
     justify-content: center;
     align-items: center;  
@@ -477,10 +480,10 @@
 
 
 @media  (max-width:1000px){
-    .info,.news,.experience,.education,.biography,.teaching,.gallery.research__group,.selection{
+    .info,.news,.experience,.education,.biography,.teaching,.gallery.research__group,.selection,.publications{
         max-width: 96vw;
     }
-    .research__group, .selection{
+    .research__group, .selection,.publications{
         width: 96vw;
         min-width: 96vw;
     }

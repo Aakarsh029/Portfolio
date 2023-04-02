@@ -34,7 +34,9 @@
 
 <body>
     <div class="header">
-        <a href="./index.html"><div class="name">Dr.Mohit Kumar</div></a>
+        <a href="./index.html">
+            <div class="name">Dr.Mohit Kumar</div>
+        </a>
         <div class="hamburger" onclick="ham()">
             <img src="https://icons.veryicon.com/png/o/miscellaneous/linear-icon-45/hamburger-menu-5.png" alt="">
         </div>
@@ -61,14 +63,16 @@
     </div>
     <div class="selection__box">
         <div class="selection">
-            <li>Journals</li>
-            <li>Technical Report</li>
-            <li>Book Chapters</li>
-            <li>Conferences</li>
-            <li>Posters</li>
+            <ul>
+                <li onclick="list1()">Journals</li>
+                <li onclick="list2()">Conferences</li>
+                <li onclick="list3()">Technical Reports</li>
+                <li onclick="list4()">Book Chapters</li>
+                <li onclick="list5()">Posters</li>
+            </ul>
         </div>
     </div>
-    <div class="list1 active" onclick="list1()">
+    <div class="list1 active">
         <div class="publications__box">
             <div class="publications">
                 <div class="publications__header">Journals</div>
@@ -92,7 +96,7 @@
             </div>
         </div>
     </div>
-    <div class="list2" onclick="list2()">
+    <div class="list2">
         <div class="publications__box">
             <div class="publications">
                 <div class="publications__header">Conferences</div>
@@ -116,12 +120,13 @@
             </div>
         </div>
     </div>
-    <div class="list3" onclick="list3()">
+    <div class="list3">
         <div class="publications__box">
             <div class="publications">
                 <div class="publications__header">Technical Reports</div>
                 <ul>
-                    <li>PhD (School of Electrical and Electronics Engineering), Nanyang Technological University, Singapore
+                    <li>PhD (School of Electrical and Electronics Engineering), Nanyang Technological University,
+                        Singapore
                         (2006-2009)</li>
                     <li>Associate Professor (March, 2018 - May, 2022), Dept of Computer Sc and Engg, IIT Guwahati, India
                     </li>
@@ -134,17 +139,18 @@
                     <li>Professor (May, 2022 - till date), Dept of Computer Sc and Engg, IIT Guwahati, India</li>
                     <li>Associate Professor (March, 2018 - May, 2022), Dept of Computer Sc and Engg, IIT Guwahati, India
                     </li>
-    
+
                 </ul>
             </div>
         </div>
     </div>
-    <div class="list4" onclick="list4()">
+    <div class="list4">
         <div class="publications__box">
             <div class="publications">
                 <div class="publications__header">Book Chapters</div>
                 <ul>
-                    <li>PhD (School of Electrical and Electronics Engineering), Nanyang Technological University, Singapore
+                    <li>PhD (School of Electrical and Electronics Engineering), Nanyang Technological University,
+                        Singapore
                         (2006-2009)</li>
                     <li>Associate Professor (March, 2018 - May, 2022), Dept of Computer Sc and Engg, IIT Guwahati, India
                     </li>
@@ -157,17 +163,18 @@
                     <li>Professor (May, 2022 - till date), Dept of Computer Sc and Engg, IIT Guwahati, India</li>
                     <li>Associate Professor (March, 2018 - May, 2022), Dept of Computer Sc and Engg, IIT Guwahati, India
                     </li>
-    
+
                 </ul>
             </div>
         </div>
     </div>
-    <div class="list5" onclick="list5()">
+    <div class="list5">
         <div class="publications__box">
             <div class="publications">
                 <div class="publications__header">Posters</div>
                 <ul>
-                    <li>PhD (School of Electrical and Electronics Engineering), Nanyang Technological University, Singapore
+                    <li>PhD (School of Electrical and Electronics Engineering), Nanyang Technological University,
+                        Singapore
                         (2006-2009)</li>
                     <li>Associate Professor (March, 2018 - May, 2022), Dept of Computer Sc and Engg, IIT Guwahati, India
                     </li>
@@ -180,7 +187,7 @@
                     <li>Professor (May, 2022 - till date), Dept of Computer Sc and Engg, IIT Guwahati, India</li>
                     <li>Associate Professor (March, 2018 - May, 2022), Dept of Computer Sc and Engg, IIT Guwahati, India
                     </li>
-    
+
                 </ul>
             </div>
         </div>
@@ -195,12 +202,12 @@
         }
     </script>
     <script>
-        const list1 = document.querySelector(".list1");
+        function list1() {
+            const list1 = document.querySelector(".list1");
             const list2 = document.querySelector(".list2");
             const list3 = document.querySelector(".list3");
             const list4 = document.querySelector(".list4");
             const list5 = document.querySelector(".list5");
-        function list1() {
             list1.classList.add("active");
             list2.classList.remove("active");
             list3.classList.remove("active");
@@ -208,13 +215,23 @@
             list5.classList.remove("active");
         }
         function list2() {
+            const list1 = document.querySelector(".list1");
+            const list2 = document.querySelector(".list2");
+            const list3 = document.querySelector(".list3");
+            const list4 = document.querySelector(".list4");
+            const list5 = document.querySelector(".list5");
             list1.classList.remove("active");
-            list2.classList.add("active");
+            list2.classList.toggle("active");
             list3.classList.remove("active");
             list4.classList.remove("active");
             list5.classList.remove("active");
         }
         function list3() {
+            const list1 = document.querySelector(".list1");
+            const list2 = document.querySelector(".list2");
+            const list3 = document.querySelector(".list3");
+            const list4 = document.querySelector(".list4");
+            const list5 = document.querySelector(".list5");
             list1.classList.remove("active");
             list2.classList.remove("active");
             list3.classList.add("active");
@@ -222,6 +239,11 @@
             list5.classList.remove("active");
         }
         function list4() {
+            const list1 = document.querySelector(".list1");
+            const list2 = document.querySelector(".list2");
+            const list3 = document.querySelector(".list3");
+            const list4 = document.querySelector(".list4");
+            const list5 = document.querySelector(".list5");
             list1.classList.remove("active");
             list2.classList.remove("active");
             list3.classList.remove("active");
@@ -229,6 +251,11 @@
             list5.classList.remove("active");
         }
         function list5() {
+            const list1 = document.querySelector(".list1");
+            const list2 = document.querySelector(".list2");
+            const list3 = document.querySelector(".list3");
+            const list4 = document.querySelector(".list4");
+            const list5 = document.querySelector(".list5");
             list1.classList.remove("active");
             list2.classList.remove("active");
             list3.classList.remove("active");
