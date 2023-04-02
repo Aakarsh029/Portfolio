@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css"
+        integrity="sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css"
+        integrity="sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/regular.min.css"
+        integrity="sha512-WidMaWaNmZqjk3gDE6KBFCoDpBz9stTsTZZTeocfq/eDNkLfpakEd7qR0bPejvy/x0iT0dvzIq4IirnBtVer5A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/solid.min.css"
+        integrity="sha512-yDUXOUWwbHH4ggxueDnC5vJv4tmfySpVdIcN1LksGZi8W8EVZv4uKGrQc0pVf66zS7LDhFJM7Zdeow1sw1/8Jw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/svg-with-js.min.css"
+        integrity="sha512-FTnGkh+EGoZdexd/sIZYeqkXFlcV3VSscCTBwzwXv1IEN5W7/zRLf6aUBVf2Ahdgx3h/h22HNzaoeBnYT6vDlA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+        integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+</head>
+
+<body>
+    <div class="header">
+        <a href="./index.html"><div class="name">Dr.Mohit Kumar</div></a>
+        <div class="hamburger" onclick="ham()">
+            <img src="https://icons.veryicon.com/png/o/miscellaneous/linear-icon-45/hamburger-menu-5.png" alt="">
+        </div>
+        <div class="header__items">
+            <a href="./publications.html">
+                <div class="item__holder selected">Publications</div>
+            </a>
+            <a href="./teaching.html">
+                <div class="item__holder">Teaching</div>
+            </a>
+            <a href="./research.html">
+                <div class="item__holder">Research</div>
+            </a>
+            <a href="./resources.html">
+                <div class="item__holder">Resources</div>
+            </a>
+            <a href="./gallery.html">
+                <div class="item__holder">Gallery</div>
+            </a>
+            <a href="">
+                <div class="item__holder">CV</div>
+            </a>
+        </div>
+    </div>
+    <div class="selection__box">
+        <div class="selection">
+            <li>Journals</li>
+            <li>Technical Report</li>
+            <li>Book Chapters</li>
+            <li>Conferences</li>
+            <li>Posters</li>
+        </div>
+    </div>
+    <div class="list1 active" onclick="list1()">
+        <div class="publications__box">
+            <div class="publications">
+                <div class="publications__header">Journals</div>
+                <ul>
+                    <li>PhD (School of Electrical and Electronics Engineering), Nanyang Technological University,
+                        Singapore
+                        (2006-2009)</li>
+                    <li>Associate Professor (March, 2018 - May, 2022), Dept of Computer Sc and Engg, IIT Guwahati, India
+                    </li>
+                    <li>Professor (May, 2022 - till date), Dept of Computer Sc and Engg, IIT Guwahati, India</li>
+                    <li>Associate Professor (March, 2018 - May, 2022), Dept of Computer Sc and Engg, IIT Guwahati, India
+                    </li>
+                    <li>Professor (May, 2022 - till date), Dept of Computer Sc and Engg, IIT Guwahati, India</li>
+                    <li>Associate Professor (March, 2018 - May, 2022), Dept of Computer Sc and Engg, IIT Guwahati, India
+                    </li>
+                    <li>Professor (May, 2022 - till date), Dept of Computer Sc and Engg, IIT Guwahati, India</li>
+                    <li>Associate Professor (March, 2018 - May, 2022), Dept of Computer Sc and Engg, IIT Guwahati, India
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="list2" onclick="list2()">
+        <div class="publications__box">
+            <div class="publications">
+                <div class="publications__header">Conferences</div>
+                <ul>
+                    <li>PhD (School of Electrical and Electronics Engineering), Nanyang Technological University,
+                        Singapore
+                        (2006-2009)</li>
+                    <li>Associate Professor (March, 2018 - May, 2022), Dept of Computer Sc and Engg, IIT Guwahati, India
+                    </li>
+                    <li>Professor (May, 2022 - till date), Dept of Computer Sc and Engg, IIT Guwahati, India</li>
+                    <li>Associate Professor (March, 2018 - May, 2022), Dept of Computer Sc and Engg, IIT Guwahati, India
+                    </li>
+                    <li>Professor (May, 2022 - till date), Dept of Computer Sc and Engg, IIT Guwahati, India</li>
+                    <li>Associate Professor (March, 2018 - May, 2022), Dept of Computer Sc and Engg, IIT Guwahati, India
+                    </li>
+                    <li>Professor (May, 2022 - till date), Dept of Computer Sc and Engg, IIT Guwahati, India</li>
+                    <li>Associate Professor (March, 2018 - May, 2022), Dept of Computer Sc and Engg, IIT Guwahati, India
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="list3" onclick="list3()">
+        <div class="publications__box">
+            <div class="publications">
+                <div class="publications__header">Technical Reports</div>
+                <ul>
+                    <li>PhD (School of Electrical and Electronics Engineering), Nanyang Technological University, Singapore
+                        (2006-2009)</li>
+                    <li>Associate Professor (March, 2018 - May, 2022), Dept of Computer Sc and Engg, IIT Guwahati, India
+                    </li>
+                    <li>Professor (May, 2022 - till date), Dept of Computer Sc and Engg, IIT Guwahati, India</li>
+                    <li>Associate Professor (March, 2018 - May, 2022), Dept of Computer Sc and Engg, IIT Guwahati, India
+                    </li>
+                    <li>Professor (May, 2022 - till date), Dept of Computer Sc and Engg, IIT Guwahati, India</li>
+                    <li>Associate Professor (March, 2018 - May, 2022), Dept of Computer Sc and Engg, IIT Guwahati, India
+                    </li>
+                    <li>Professor (May, 2022 - till date), Dept of Computer Sc and Engg, IIT Guwahati, India</li>
+                    <li>Associate Professor (March, 2018 - May, 2022), Dept of Computer Sc and Engg, IIT Guwahati, India
+                    </li>
+    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="list4" onclick="list4()">
+        <div class="publications__box">
+            <div class="publications">
+                <div class="publications__header">Book Chapters</div>
+                <ul>
+                    <li>PhD (School of Electrical and Electronics Engineering), Nanyang Technological University, Singapore
+                        (2006-2009)</li>
+                    <li>Associate Professor (March, 2018 - May, 2022), Dept of Computer Sc and Engg, IIT Guwahati, India
+                    </li>
+                    <li>Professor (May, 2022 - till date), Dept of Computer Sc and Engg, IIT Guwahati, India</li>
+                    <li>Associate Professor (March, 2018 - May, 2022), Dept of Computer Sc and Engg, IIT Guwahati, India
+                    </li>
+                    <li>Professor (May, 2022 - till date), Dept of Computer Sc and Engg, IIT Guwahati, India</li>
+                    <li>Associate Professor (March, 2018 - May, 2022), Dept of Computer Sc and Engg, IIT Guwahati, India
+                    </li>
+                    <li>Professor (May, 2022 - till date), Dept of Computer Sc and Engg, IIT Guwahati, India</li>
+                    <li>Associate Professor (March, 2018 - May, 2022), Dept of Computer Sc and Engg, IIT Guwahati, India
+                    </li>
+    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="list5" onclick="list5()">
+        <div class="publications__box">
+            <div class="publications">
+                <div class="publications__header">Posters</div>
+                <ul>
+                    <li>PhD (School of Electrical and Electronics Engineering), Nanyang Technological University, Singapore
+                        (2006-2009)</li>
+                    <li>Associate Professor (March, 2018 - May, 2022), Dept of Computer Sc and Engg, IIT Guwahati, India
+                    </li>
+                    <li>Professor (May, 2022 - till date), Dept of Computer Sc and Engg, IIT Guwahati, India</li>
+                    <li>Associate Professor (March, 2018 - May, 2022), Dept of Computer Sc and Engg, IIT Guwahati, India
+                    </li>
+                    <li>Professor (May, 2022 - till date), Dept of Computer Sc and Engg, IIT Guwahati, India</li>
+                    <li>Associate Professor (March, 2018 - May, 2022), Dept of Computer Sc and Engg, IIT Guwahati, India
+                    </li>
+                    <li>Professor (May, 2022 - till date), Dept of Computer Sc and Engg, IIT Guwahati, India</li>
+                    <li>Associate Professor (March, 2018 - May, 2022), Dept of Computer Sc and Engg, IIT Guwahati, India
+                    </li>
+    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        @Dr. Mohit Kumar,, Developed & Maintained by Aakarsh Bansal.
+    </div>
+    <script>
+        function ham() {
+            const menuBtn = document.querySelector(".header__items");
+            menuBtn.classList.toggle("active");
+        }
+    </script>
+    <script>
+        function list1() {
+            const list1 = document.querySelector(".list1");
+            const list2 = document.querySelector(".list2");
+            const list3 = document.querySelector(".list3");
+            const list4 = document.querySelector(".list4");
+            const list5 = document.querySelector(".list5");
+            list1.classList.add("active");
+            list2.classList.remove("active");
+            list3.classList.remove("active");
+            list4.classList.remove("active");
+            list5.classList.remove("active");
+
+        }
+    </script>
+    <script>
+        function list2() {
+            const list1 = document.querySelector(".list1");
+            const list2 = document.querySelector(".list2");
+            const list3 = document.querySelector(".list3");
+            const list4 = document.querySelector(".list4");
+            const list5 = document.querySelector(".list5");
+            list1.classList.remove("active");
+            list2.classList.add("active");
+            list3.classList.remove("active");
+            list4.classList.remove("active");
+            list5.classList.remove("active");
+        }
+    </script>
+    <script>
+        function list3() {
+            const list1 = document.querySelector(".list1");
+            const list2 = document.querySelector(".list2");
+            const list3 = document.querySelector(".list3");
+            const list4 = document.querySelector(".list4");
+            const list5 = document.querySelector(".list5");
+            list1.classList.remove("active");
+            list2.classList.remove("active");
+            list3.classList.add("active");
+            list4.classList.remove("active");
+            list5.classList.remove("active");
+        }
+    </script>
+    <script>
+        function list4() {
+            const list1 = document.querySelector(".list1");
+            const list2 = document.querySelector(".list2");
+            const list3 = document.querySelector(".list3");
+            const list4 = document.querySelector(".list4");
+            const list5 = document.querySelector(".list5");
+            list1.classList.remove("active");
+            list2.classList.remove("active");
+            list3.classList.remove("active");
+            list4.classList.add("active");
+            list5.classList.remove("active");
+        }
+    </script>
+    <script>
+        function list5() {
+            const list1 = document.querySelector(".list1");
+            const list2 = document.querySelector(".list2");
+            const list3 = document.querySelector(".list3");
+            const list4 = document.querySelector(".list4");
+            const list5 = document.querySelector(".list5");
+            list1.classList.remove("active");
+            list2.classList.remove("active");
+            list3.classList.remove("active");
+            list4.classList.remove("active");
+            list5.classList.add("active");
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+        integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+
+</html>
