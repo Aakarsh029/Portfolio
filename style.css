@@ -228,6 +228,7 @@
 .biography p{
     margin: 20px;
     font-size: 18px;
+    text-align: left;
 }
 .footer{
     padding-bottom: 20px;
