@@ -91,8 +91,14 @@ body{
     width: 30vh;
     height: 30vh;
 }
-.info__section:nth-child(2){
+.info__section:nth-child(1){
     flex: 0.2;
+}
+.info__section:nth-child(2){
+    flex: 0.4;
+}
+.info__section:nth-child(3){
+    flex: 0.4;
 }
 .social__media__icons{
     display: flex;
@@ -347,6 +353,35 @@ body{
     font-weight: bold;
     margin: 20px;
 }
+.teaching__header__heading{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px;
+}
+.teaching__sub__heading{
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0 0 0 20px;
+    color: rgba(0,0,0,.6);
+}
+.semester__courses{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-wrap: wrap;
+}
+.odd__semester,.even__semester{
+    flex-basis: 50%;
+    padding: 15px 0 0 20px;
+}
+.even__semester{
+    color: rgba(0,0,0,.7);
+}
+.semester__heading{
+    font-size: 17px;
+    font-weight: lighter;
+    text-align: center;
+}
 .teaching ul{
     margin: 30px;
     margin-left: 60px;
@@ -356,7 +391,9 @@ body{
     list-style:auto;
     font-size: 18px;
 }
-
+.odd__semester ul li,.even__semester ul li{
+    list-style: circle !important;
+}
 
 /* gallery page created */
 
@@ -470,12 +507,13 @@ body{
 .research__group__alumni__main{
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     flex-wrap: wrap;
 }
 .research__group__alumni__main__container{
     flex-basis: 45%;
     margin: 10px;
+    /* display: grid; */
     line-height: 190%;
 }
 .research__group__alumni__name{
@@ -488,7 +526,6 @@ body{
 .research__group__alumni__branch span{
     color: blue;
 }
-
 
 @media  (max-width:1000px){
     .info,.news,.experience,.education,.biography,.teaching,.gallery.research__group,.selection,.publications{
