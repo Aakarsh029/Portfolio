@@ -601,4 +601,19 @@ body{
     .header__items.active{
         transform: translateY(0px);
     }
+    .odd__semester,.even__semester{
+        flex-basis: 100%;
+        padding: 5px 0 0 20px;
+    }
+    .research__group__alumni__main__container{
+        flex-basis: 90%;
+        margin: 10px;
+        text-align: justify;
+        /* display: grid; */
+        line-height: 190%;
+        text-justify: inter-word;
+    }
+    .teaching__header__heading{
+        margin-bottom: 8px;
+    }
 }
